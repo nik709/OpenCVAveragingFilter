@@ -12,10 +12,10 @@ void main() {
 	showImage("Source image", imageLoader.getImage());
 
 	AveragingFilter filter(imageLoader.getImage());
-	filter.inGrayScale();
-	filter.methodCanny();
-	filter.distanceMap();
-	filter.averagingFilter(imageLoader.getImage());
+	filter.inGrayScale()
+		.methodCanny()
+		.distanceMap()
+		.averagingFilter(imageLoader.getImage());
 
 	cv::waitKey(0);
 }
